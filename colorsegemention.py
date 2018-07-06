@@ -7,6 +7,7 @@ img = cv2.imread('lineimage.jpg')
 lower_color = np.array([110,100,100])
 upper_color = np.array([130,255,255])
 
+# blue color segmention
 hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 mask = cv2.inRange(hsv,lower_color,upper_color)
 
